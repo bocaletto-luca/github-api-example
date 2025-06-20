@@ -1,0 +1,13 @@
+name: 'Issue Labeler'
+description: 'Applica automaticamente il label needs-triage alle issue aperte'
+author: 'bocaletto-luca'
+inputs:
+  token:
+    description: 'GitHub token per autenticare le requests'
+    required: true
+runs:
+  using: 'node16'
+  main: 'src/index.js'
+branding:
+  icon: 'tag'
+  color: 'blue'
